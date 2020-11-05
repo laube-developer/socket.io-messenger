@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mensager | Socket IO</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div id="messages">
+	<!-- -->
+</div>
+<form action="">
+  <input type="text" id="m">
+  <button>Enviar</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>		
+	$(function(){
+		//------------------
+		function showNewLine(rightOrLeft, msg){
+			if(rightOrLeft == "right"){
+				$('#messages').append('<div class="msg msgr"><div class="text right">'+ msg +'</div></div>')
+			}else if(rightOrLeft == "left"){
+				$('#messages').append('<div class="msg msgl"><div class="text left">'+ msg +'</div></div>')
+			}
+		}
+		//------------------
+
+		var socket = io()
+		//sendding a message
+		$('form').submit((event=>{
+			event.preventDefault() //prevent page reload
+			socket.emit('chat message', $('input').val())
+
+			showNewLine('right', $('input').val())
+
+			$('input').val('')
+		}))
+
+		//receive a message
+		socket.on('chat message', msg=>{
+			showNewLine('left', msg)
+		})
+
+	})
+</script>
+</body>
+</html>
