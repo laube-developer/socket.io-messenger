@@ -188,10 +188,13 @@ showNewLine('left', msg)
 
 ---
 ## 5) Finish
+
 In this guide we learn how to create an project with node.js, Express and Socket.io, integratting the cliente and the server with a simple mensager chat. You can add more function in your app, as login sistem, users, and other things. The documentation of this 3 techs, and the jQuery docs are below.
 doc node.js     -> https://nodejs.org/en/
 doc express     -> https://expressjs.com/pt-br/
 doc socket.io   -> https://socket.io/docs/
 doc jquery      -> https://jquery.com/download/
+
 ---
+
 ### Thank you for read this article!!! For more guides, see my page here
