@@ -1,6 +1,6 @@
 # socket.io-messenger
 
-![socket.io-messager](https://github.com/laube-developer/socket.io-messager/blob/main/Imgs/face-image.gif?raw=true)
+![socket.io-messenger](https://github.com/laube-developer/socket.io-messager/blob/main/Imgs/face-image.gif?raw=true)
 
 When we think in the comunication with other peoples, we remember the apps like Facebook Mensager, Telegram, Intagram Direct, and, the most famous chat message: Whats App. But, if i'm programmer, how can I create an simple chat using my knoledge for that. Answer: Socket io.
 Socket.io change the link between client and server, with a fast road easy and an easy implementation in an aplication web with basic HTML and node.js. Therefore, for this guide, you need to know basis of node js, as express API. Look the follow and try this in your machine to abract in detail:
@@ -24,7 +24,7 @@ In case that you have already installed node and express, keep to step 2.
 I'll use express and node.js for the server. Verify if the node.js is intalled in your machine typing this in the terminal:
 > node -v
 
-![socket.io-messager](https://github.com/laube-developer/socket.io-messager/blob/main/Imgs/promp-node-v.png?raw=true)
+![socket.io-messenger](https://github.com/laube-developer/socket.io-messager/blob/main/Imgs/promp-node-v.png?raw=true)
 
 If node installed corectly, it's show an line with the vertion (don't worry with the version, but find the last that your PC support's), else, install node.js in https://nodejs.org/en/ .
 
