@@ -1,4 +1,4 @@
-# socket.io-messager
+# socket.io-messenger
 
 ![socket.io-messager](https://github.com/laube-developer/socket.io-messager/blob/main/Imgs/face-image.gif?raw=true)
 
